@@ -17,7 +17,7 @@ export default function Navbar() {
             <Link href="/projects">Projects</Link>
           </li>
           <li>
-            <Link href="https://prinke.dev/contact">Contact</Link>
+            <Link passHref href="/contact">Contact</Link>
           </li>
         </motion.ul>
       </motion.div>
