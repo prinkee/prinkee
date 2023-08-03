@@ -11,7 +11,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     }
 
     try {
-      const discordWebhookUrl = process.env.DISCORD_WEBHOOK_URL!; // Replace with your Discord webhook URL
+      const discordWebhookUrl = process.env.DISCORD_WEBHOOK_URL!;
       const discordMessage = {
         content: `## New message from the contact form:\n\n**Name:** ${name}\n**Email:** ${email}\n**Message:** ${message}`,
       };

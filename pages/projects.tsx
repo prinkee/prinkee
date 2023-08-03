@@ -1,15 +1,8 @@
 import React, { useState } from "react";
-import ParticlesOverlay from "../components/particles";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import { Metadata } from "next";
 import { motion } from "framer-motion";
-
-export const meta: Metadata = {
-  title: "Portfolio - prinke.dev",
-  description:
-    "Showcasing my journey and achievements as a Full Stack Developer. Explore my projects, skills, and get in touch for collaborations and job opportunities.",
-};
+import Head from "next/head";
 
 const projects = [
   {
@@ -77,6 +70,22 @@ export default function Portfolio() {
 
   return (
     <>
+      <Head>
+        <title>prinke.dev - Projects</title>
+        <meta
+          name="description"
+          content="Showcasing my journey and achievements as a Full Stack Developer. Explore my projects, skills, and get in touch for collaborations and job opportunities."
+        />
+        <meta
+          name="keywords"
+          content="Full Stack Developer, Software Engineer, Projects, Skills, Collaborations, Job Opportunities"
+        />
+        <meta name="author" content="prinke" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+        <link rel="icon" href="/favicon.png" type="image/x-icon" />
+      </Head>
       <Navbar />
       <motion.div
         className="min-h-screen bg-base-100 py-10 text-white"
@@ -166,11 +175,11 @@ export default function Portfolio() {
                   project.images.map((image, i) => (
                     <a href={`./${image}`} target="_blank">
                       <img
-                      key={i}
-                      src={image}
-                      alt={project.name}
-                      className="mt-4 w-full h-auto object-cover rounded"
-                    />
+                        key={i}
+                        src={image}
+                        alt={project.name}
+                        className="mt-4 w-full h-auto object-cover rounded"
+                      />
                     </a>
                   ))
                 ) : (
