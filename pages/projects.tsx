@@ -46,7 +46,7 @@ const projects = [
   {
     name: "Dochi",
     description: "Discord Bot (Private)",
-    img: "/dochi.png",
+    img: "/dochi_bg.png",
     longDescription:
       "Dochi is a versatile, multi-purpose Discord bot currently under private development. Designed with user engagement and server management in mind, Dochi encompasses a wide range of functionalities, from moderation tools to utility commands, and even fun features to foster interaction and entertainment within the community.",
   },
