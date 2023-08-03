@@ -3,6 +3,7 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import { motion } from "framer-motion";
 import Head from "next/head";
+import Image from "next/image";
 
 const projects = [
   {
@@ -174,11 +175,14 @@ export default function Portfolio() {
                 {project.images && project.images.length > 0 ? (
                   project.images.map((image, i) => (
                     <a href={`./${image}`} target="_blank">
-                      <img
+                      <Image
                         key={i}
                         src={image}
                         alt={project.name}
                         className="mt-4 w-full h-auto object-cover rounded"
+                        layout="responsive"
+                        width={500}
+                        height={300}
                       />
                     </a>
                   ))

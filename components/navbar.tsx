@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Navbar() {
   const item = {
@@ -10,13 +11,13 @@ export default function Navbar() {
   return (
     <motion.div className="fixed top-0 left-0 w-full px-4 md:px-0 z-50 flex justify-center" initial="hidden" animate="show">
       <motion.div className="flex items-center justify-between rounded-xl bg-base-200 mt-5 shadow-lg w-full md:max-w-screen-md lg:max-w-screen-lg px-4 py-2" variants={item}>
-        <a className="btn btn-ghost normal-case text-xl" href="/">prinke.dev</a>
+        <Link className="btn btn-ghost normal-case text-xl" href="/">prinke.dev</Link>
         <motion.ul className="menu menu-horizontal px-1" variants={item}>
           <li>
-            <a href="/projects">Projects</a>
+            <Link href="/projects">Projects</Link>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <Link href="/contact">Contact</Link>
           </li>
         </motion.ul>
       </motion.div>
