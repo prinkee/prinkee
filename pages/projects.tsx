@@ -4,6 +4,7 @@ import Footer from "../components/footer";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 const projects = [
   {
@@ -143,7 +144,7 @@ export default function Portfolio() {
           ))}
         </motion.div>
         {projects.map((project, index) => (
-          <>
+          <React.Fragment key={index}>
             <input
               type="checkbox"
               id={`my_modal_${index}`}
@@ -155,28 +156,23 @@ export default function Portfolio() {
                 <p>{project.longDescription}</p>
                 <div className="space-x-2">
                   {project.website && (
-                    <a
-                      href={project.website}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <Link href={project.website} target="_blank">
                       <button className="btn btn-primary mt-4">Website</button>
-                    </a>
+                    </Link>
                   )}
                   {project.socials &&
                     Object.entries(project.socials).map(([key, value]) => (
-                      <a href={value} target="_blank" rel="noopener noreferrer">
-                        <button key={key} className="btn btn-primary mt-2">
+                      <Link href={value} key={key} target="_blank">
+                        <button className="btn btn-primary mt-2">
                           {key}
                         </button>
-                      </a>
+                      </Link>
                     ))}
                 </div>
                 {project.images && project.images.length > 0 ? (
                   project.images.map((image, i) => (
-                    <a href={`./${image}`} target="_blank">
+                    <Link href={`./${image}`} key={i}>
                       <Image
-                        key={i}
                         src={image}
                         alt={project.name}
                         className="mt-4 w-full h-auto object-cover rounded"
@@ -184,7 +180,7 @@ export default function Portfolio() {
                         width={500}
                         height={300}
                       />
-                    </a>
+                    </Link>
                   ))
                 ) : (
                   <p className="mt-4">No images available for this project.</p>
@@ -198,7 +194,7 @@ export default function Portfolio() {
                 htmlFor={`my_modal_${index}`}
               ></label>
             </div>
-          </>
+          </React.Fragment>
         ))}
       </motion.div>
       <Footer />
