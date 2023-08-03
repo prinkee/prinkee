@@ -17,7 +17,7 @@ export default function Navbar() {
             <Link href="/projects">Projects</Link>
           </li>
           <li>
-            <Link passHref href="/contact">Contact</Link>
+            <a href="/contact">Contact</a>
           </li>
         </motion.ul>
       </motion.div>
