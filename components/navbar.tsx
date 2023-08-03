@@ -17,7 +17,7 @@ export default function Navbar() {
             <Link href="/projects">Projects</Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <a onClick={() => window.location.href = "/contact"}>Contact</a>
           </li>
         </motion.ul>
       </motion.div>
