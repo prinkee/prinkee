@@ -46,9 +46,9 @@ export default function Hero() {
             <Link href="/projects">
               <button className="btn btn-primary">View My Projects</button>
             </Link>
-            <a onClick={() => window.location.href = "/contact"}>
+            <Link href="/contact">
               <button className="btn ml-5">Get in Touch</button>
-            </a>
+            </Link>
           </motion.div>
         </div>
       </motion.div>

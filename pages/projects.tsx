@@ -25,8 +25,8 @@ const projects = [
     longDescription:
       "Throughout my development career, I've authored a variety of plugins for the Spigot platform. These encompass a wide range of functionalities, from intuitive messaging systems to comprehensive administration tools and quality-of-life improvements. Each plugin has been meticulously designed to enhance the Minecraft server experience, providing server owners with increased control and customization, while ensuring players enjoy a smooth and engaging gameplay experience. My Spigot plugins demonstrate my commitment to creating efficient, user-friendly solutions that meet the diverse needs of the Minecraft community.",
     socials: {
-      "spigot profile":
-        "https://www.spigotmc.org/members/prinke.333972/#resources",
+      "spigot profile": "https://www.spigotmc.org/members/prinke.333972/#resources",
+      "github": "https://github.com/prinkee",
       "mineapi (image rendering)": "https://twitter.com/realmineapi",
       "theflawed (image map)": "https://twitter.com/theflawedx",
     },
@@ -38,7 +38,7 @@ const projects = [
     longDescription:
       "RikoAI was an AI chatbot for Discord, now discontinued and open-sourced. Leveraging the advanced natural language processing capabilities of OpenAI, RikoAI offered a highly engaging and responsive chat experience to users.",
     socials: {
-      "github (coming soon)": "https://github.com/prinkee/rikoai",
+      "github": "https://github.com/prinkee/discord-chatbot",
       "demo video": "https://youtu.be/Gj5kJZq3qYU",
     },
     images: ["/riko_prev.png", "/riko_prev2.png", "/riko_prev3.png"],
