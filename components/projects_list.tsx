@@ -1,5 +1,11 @@
 import React from "react";
-import { FaJsSquare, FaJava, FaHtml5, FaReact, FaCss3Alt } from "react-icons/fa";
+import {
+  FaJsSquare,
+  FaJava,
+  FaHtml5,
+  FaReact,
+  FaCss3Alt,
+} from "react-icons/fa";
 
 export default function ProjectsList() {
   return (
@@ -88,12 +94,15 @@ export default function ProjectsList() {
               </div>
             </div>
             <p className="text-lg">
-              Crowned Games is a passionate, independent video game development
-              company dedicated to creating imaginative and thought-provoking
-              experiences. Born out of a deep love for gaming and innovative
-              storytelling, our small but dedicated team believes in the magic
-              of video games as a powerful medium of art, adventure, and
-              connection.
+              RikoAI was a public Discord bot designed to bring human-like
+              conversational abilities to Discord servers, leveraging the power
+              of OpenAI's GPT-3.5. The bot was equipped with features such as
+              channel management, customizable personalities, and admin
+              controls, aiming to provide a more interactive and engaging
+              experience for users. While the project has been discontinued to
+              focus on more ambitious endeavors, the source code has been
+              open-sourced and is available on GitHub for educational purposes
+              and further development by the community.
             </p>
             <div className="card-actions">
               <button className="btn btn-link p-0">More Info</button>
