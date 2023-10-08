@@ -20,7 +20,7 @@ export default function Hero() {
 
   return (
     <motion.div
-      className="hero min-h-screen bg-base-100 text-base-content"
+      className="hero min-h-screen bg-base-100 text-white"
       variants={container}
       initial="hidden"
       animate="show"

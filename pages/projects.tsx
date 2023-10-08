@@ -90,7 +90,7 @@ export default function Portfolio() {
       </Head>
       <Navbar />
       <motion.div
-        className="min-h-screen bg-base-100 py-10 text-base-content"
+        className="min-h-screen bg-base-100 py-10 text-white"
         variants={container}
         initial="hidden"
         animate="show"

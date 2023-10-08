@@ -72,7 +72,7 @@ export default function ContactForm() {
         async={true}
         defer={true}
       />
-      <div className="flex items-center justify-center h-screen">
+      <div className="flex items-center justify-center min-h-screen mt-20 lg:mt-0 text-white">
         <motion.form
           className="w-full max-w-2xl p-5 rounded-xl"
           variants={variants}

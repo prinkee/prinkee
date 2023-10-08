@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="footer footer-center p-4 bg-base-200 text-base-content z-0 relative">
+    <footer className="footer footer-center p-4 bg-base-200 text-white z-0 relative">
       <div>
         <p>
           © prinke.dev {new Date().getFullYear()} |{" "}
