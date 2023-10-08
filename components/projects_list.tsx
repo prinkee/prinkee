@@ -6,6 +6,7 @@ import {
   FaReact,
   FaCss3Alt,
 } from "react-icons/fa";
+import Image from "next/image";
 
 export default function ProjectsList() {
   return (
@@ -41,11 +42,11 @@ export default function ProjectsList() {
         </div>
 
         <div className="flex gap-2">
-          <img src="/cpp.png" className="h-6 mt-5" draggable={false} />
-          <img src="/ts.png" className="h-6 mt-5" draggable={false} />
+          <Image src="/cpp.png" alt="C++ Logo" className="h-6 mt-5" draggable={false} />
+          <Image src="/ts.png" alt="TypeScript Logo" className="h-6 mt-5" draggable={false} />
           <FaReact className="inline-block w-6 h-6 text-blue-500 mt-5" />
           <FaCss3Alt className="inline-block w-6 h-6 text-blue-300 mt-5" />
-          <img src="/tailwindcss.png" className="h-6 mt-5" draggable={false} />
+          <Image src="/tailwindcss.png" alt="TailwindCSS Logo" className="h-6 mt-5" draggable={false} />
         </div>
 
         <div>
@@ -54,8 +55,9 @@ export default function ProjectsList() {
         <div className="card w-full bg-base-200">
           <div className="card-body">
             <div className="flex flex-row">
-              <img
+              <Image
                 src="/crowned_logo.png"
+                alt="Crowned Games Logo"
                 className="h-16 mr-5"
                 draggable={false}
               />
@@ -83,8 +85,9 @@ export default function ProjectsList() {
         <div className="card mt-5 w-full bg-base-200">
           <div className="card-body">
             <div className="flex flex-row">
-              <img
+              <Image
                 src="/rikoai_logo.png"
+                alt="RikoAI Logo"
                 className="h-16 mr-5"
                 draggable={false}
               />
