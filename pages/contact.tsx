@@ -25,7 +25,9 @@ export default function Contact() {
       </Head>
       <div>
         <Navbar />
+        <div className="mt-[100px]">
         <ContactForm />
+        </div>
         <Footer />
       </div>
     </>

@@ -42,11 +42,11 @@ export default function ProjectsList() {
         </div>
 
         <div className="flex gap-2">
-          <Image src="/cpp.png" alt="C++ Logo" className="h-6 mt-5" draggable={false} />
-          <Image src="/ts.png" alt="TypeScript Logo" className="h-6 mt-5" draggable={false} />
-          <FaReact className="inline-block w-6 h-6 text-blue-500 mt-5" />
-          <FaCss3Alt className="inline-block w-6 h-6 text-blue-300 mt-5" />
-          <Image src="/tailwindcss.png" alt="TailwindCSS Logo" className="h-6 mt-5" draggable={false} />
+          <Image src="/cpp.png" alt="C++ Logo" className="h-6 mt-5" width={32} height={32} draggable={false} />
+          <Image src="/ts.png" alt="TypeScript Logo" className="h-6 mt-5" width={32} height={32} draggable={false} />
+          <FaReact className="inline-block w-6 h-6 text-blue-500 mt-5" width={32} height={32} />
+          <FaCss3Alt className="inline-block w-6 h-6 text-blue-300 mt-5" width={32} height={32} />
+          <Image src="/tailwindcss.png" alt="TailwindCSS Logo" className="h-6 mt-5" width={32} height={32} draggable={false} />
         </div>
 
         <div>
@@ -58,6 +58,8 @@ export default function ProjectsList() {
               <Image
                 src="/crowned_logo.png"
                 alt="Crowned Games Logo"
+                height={75}
+                width={100}
                 className="h-16 mr-5"
                 draggable={false}
               />
@@ -88,6 +90,8 @@ export default function ProjectsList() {
               <Image
                 src="/rikoai_logo.png"
                 alt="RikoAI Logo"
+                height={75}
+                width={75}
                 className="h-16 mr-5"
                 draggable={false}
               />
