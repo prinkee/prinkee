@@ -1,34 +1,35 @@
 import React from "react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer className="footer footer-center p-4 bg-base-200 text-white z-0 relative">
       <div>
         <p>
-          © prinke.dev {new Date().getFullYear()} |{" "}
-          <a
+          &copy; prinke.dev {new Date().getFullYear()} |{" "}
+          <Link
             href="https://twitter.com/prinkeo"
             className="link-primary"
             target="_blank"
           >
             twitter
-          </a>
+          </Link>
           ,{" "}
-          <a
+          <Link
             href="https://github.com/prinkee"
             className="link-primary"
             target="_blank"
           >
             github
-          </a>{" "}
+          </Link>{" "}
           | built with{" "}
-          <a
+          <Link
             href="https://daisyui.com"
             className="link-primary"
             target="_blank"
           >
             daisyUI
-          </a>
+          </Link>
         </p>
       </div>
     </footer>

@@ -21,3 +21,14 @@ body {
   color: rgb(var(--foreground-rgb));
   background: base-100;
 }
+
+.project-card {
+  height: 300px; /* Adjust the height as needed */
+  width: 100%; /* This will make the width adjust to the grid layout */
+}
+
+.project-card img {
+  object-fit: cover; /* This ensures images cover the area without stretching */
+  height: 100%; /* Match height of the card */
+  width: 100%; /* Match width of the card */
+}

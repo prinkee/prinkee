@@ -157,7 +157,7 @@ export default function ContactForm() {
             </div>
           )}
           <div className="divider">OR</div>
-          <div className="mt-4 flex justify-left mt-5 space-x-4">
+          <div className="flex justify-left mt-5 space-x-4">
             <a
               href="https://twitter.com/prinkeo"
               target="_blank"
