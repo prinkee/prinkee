@@ -7,7 +7,7 @@ export default function ProjectsList() {
     <>
       {/* rows of 3 daisyui */}
       <div className="container mx-auto mt-16 mb-48">
-        <h1 className="text-5xl font-bold mt-48 mb-16">My Projects</h1>
+        <h1 className="text-5xl font-bold mt-16 mb-16">My Projects</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {/* card start */}
           <Link href="https://www.crowned.games" target="_blank">
