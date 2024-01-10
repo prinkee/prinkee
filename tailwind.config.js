@@ -13,7 +13,21 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',  // Add this line
   ],
   daisyui: {
-    themes: ["coffee"],
+    themes: [
+      {
+        redblack: {
+          'primary': '#b71c1c',
+          'secondary': '#263238',
+          'accent': '#ffeb3b',
+          'neutral': '#1c1c1c',
+          'base-100': '#000000',
+          'info': '#2196f3',
+          'success': '#4caf50',
+          'warning': '#ff9800',
+          'error': '#f44336',
+        },
+      },
+    ],
   },
   theme: {
     extend: {

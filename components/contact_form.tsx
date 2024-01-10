@@ -14,6 +14,7 @@ export default function ContactForm() {
   const [message, setMessage] = useState("");
   const [toastMessage, setToastMessage] = useState("");
   const [toastType, setToastType] = useState("");
+  const turnstileKey = process.env.CF_TURNSTILE_SITE_KEY;
 
   const variants = {
     hidden: { opacity: 0, y: 50 },
@@ -135,7 +136,7 @@ export default function ContactForm() {
           </div>
           <div
             className="cf-turnstile checkbox"
-            data-sitekey={process.env.CF_TURNSTILE_SITE_KEY}
+            data-sitekey={turnstileKey}
           />
           <div className="flex items-center mt-16 justify-between">
             {isLoading ? (
@@ -151,7 +152,7 @@ export default function ContactForm() {
           </div>
           {toastMessage && (
             <div className="toast toast-start toast-bottom">
-              <div className={`alert alert-${toastType}`}>
+              <div className={`alert alert-info`}>
                 <span>{toastMessage}</span>
               </div>
             </div>
