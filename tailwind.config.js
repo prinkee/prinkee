@@ -17,7 +17,7 @@ module.exports = {
       {
         redblack: {
           'primary': '#b71c1c',
-          'secondary': '#263238',
+          'secondary': '#161616',
           'accent': '#ffeb3b',
           'neutral': '#1c1c1c',
           'base-100': '#000000',

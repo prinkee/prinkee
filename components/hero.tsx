@@ -47,7 +47,7 @@ export default function Hero() {
               <button className="btn btn-primary">View My Projects</button>
             </Link>
             <Link href="/contact">
-              <button className="btn ml-5">Get in Touch</button>
+              <button className="btn btn-secondary ml-5">Get in Touch</button>
             </Link>
           </motion.div>
         </div>

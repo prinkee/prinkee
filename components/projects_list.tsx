@@ -1,14 +1,48 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function ProjectsList() {
+  // Parent variant
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.2, // Delay between each child animation
+      },
+    },
+  };
+
+  // Child (card) variant
+  const cardVariants = {
+    hidden: { opacity: 0, scale: 0.85 }, // Start with reduced opacity and scaled down
+    visible: { 
+      opacity: 1, 
+      scale: 1,
+      transition: {
+        duration: 0.5 // Adjust the duration as needed
+      }
+    },
+    hover: { 
+      scale: 1.05, // Enlarge on hover
+      transition: {
+        duration: 0.3 // Adjust the duration as needed
+      }
+    },
+  };
+
   return (
     <>
       {/* rows of 3 daisyui */}
       <div className="container mx-auto mt-16 mb-48">
         <h1 className="text-5xl font-bold mt-16 mb-16">My Projects</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
           {/* card start */}
           <Link href="https://www.crowned.games" target="_blank">
             <div className="card bg-base-100 shadow-xl image-full hover:shadow-2xl transform hover:scale-105 transition duration-500 ease-in-out project-card">
@@ -97,7 +131,7 @@ export default function ProjectsList() {
             </div>
           </Link>
           {/* card end */}
-        </div>
+        </motion.div>
 
         <h1 className="text-5xl font-bold mt-48 mb-16" id="plugins">
           Spigot Plugins
@@ -156,7 +190,9 @@ export default function ProjectsList() {
               </figure>
               <div className="card-body">
                 <h2 className="card-title text-4xl">Lobby Command</h2>
-                <p className="text-lg">A simple command to switch servers using bungee</p>
+                <p className="text-lg">
+                  A simple command to switch servers using bungee
+                </p>
 
                 <div className="card-actions justify-end">
                   <button className="btn btn-primary">View Spigot Page</button>
@@ -167,17 +203,16 @@ export default function ProjectsList() {
           {/* card end */}
 
           {/* card start */}
-          <Link
-            href="https://github.com/prinkee/duels"
-            target="_blank"
-          >
+          <Link href="https://github.com/prinkee/duels" target="_blank">
             <div className="card bg-base-100 shadow-xl image-full hover:shadow-2xl transform hover:scale-105 transition duration-500 ease-in-out project-card">
               <figure>
                 <img src="duels_bg.png" alt="Duels"></img>
               </figure>
               <div className="card-body">
                 <h2 className="card-title text-4xl">Duels</h2>
-                <p className="text-lg">A custom duels plugin for a private SMP</p>
+                <p className="text-lg">
+                  A custom duels plugin for a private SMP
+                </p>
 
                 <div className="card-actions justify-end">
                   <button className="btn btn-primary">View GitHub Repo</button>
