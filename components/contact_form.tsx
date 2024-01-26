@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter, faGithub } from "@fortawesome/free-brands-svg-icons";
+import {faXTwitter, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 import axios from "axios";
@@ -160,15 +160,15 @@ export default function ContactForm() {
           <div className="divider">OR</div>
           <div className="flex justify-left mt-5 space-x-4">
             <a
-              href="https://twitter.com/prinkeo"
+              href="https://twitter.com/prinketaru"
               target="_blank"
               className="w-8 text-primary"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faTwitter} size="2x" />
+              <FontAwesomeIcon icon={faXTwitter} size="2x" />
             </a>
             <a
-              href="https://github.com/prinkee"
+              href="https://github.com/prinketaru"
               target="_blank"
               className="w-8 text-primary"
               rel="noopener noreferrer"
@@ -176,7 +176,7 @@ export default function ContactForm() {
               <FontAwesomeIcon icon={faGithub} size="2x" />
             </a>
             <a
-              href="mailto:prince@crownedinteractive.com"
+              href="mailto:hello@prinke.dev"
               className="w-8 text-primary"
               rel="noopener noreferrer"
             >
