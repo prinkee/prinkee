@@ -8,15 +8,15 @@ export default function Footer() {
         <p>
           &copy; prinke.dev {new Date().getFullYear()} |{" "}
           <Link
-            href="https://twitter.com/prinkeo"
+            href="https://twitter.com/prinketaru"
             className="link-primary"
             target="_blank"
           >
-            twitter
+            x
           </Link>
           ,{" "}
           <Link
-            href="https://github.com/prinkee"
+            href="https://github.com/prinketaru"
             className="link-primary"
             target="_blank"
           >
