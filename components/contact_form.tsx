@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXTwitter, faGithub } from "@fortawesome/free-brands-svg-icons";
+import {faXTwitter, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 import axios from "axios";
@@ -15,18 +15,6 @@ export default function ContactForm() {
   const [toastMessage, setToastMessage] = useState("");
   const [toastType, setToastType] = useState("");
   const turnstileKey = process.env.CF_TURNSTILE_SITE_KEY;
-
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js";
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
 
   const variants = {
     hidden: { opacity: 0, y: 50 },
@@ -82,7 +70,8 @@ export default function ContactForm() {
     <>
       <Script
         src="https://challenges.cloudflare.com/turnstile/v0/api.js"
-        strategy="lazyOnload"
+        async={true}
+        defer={true}
       />
       <div className="flex items-center justify-center min-h-[calc(100vh-100px)] lg:mt-0 text-white">
         <motion.form
@@ -145,7 +134,10 @@ export default function ContactForm() {
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
           </div>
-          <div className="cf-turnstile checkbox" data-sitekey={turnstileKey} />
+          <div
+            className="cf-turnstile checkbox"
+            data-sitekey={turnstileKey}
+          />
           <div className="flex items-center mt-16 justify-between">
             {isLoading ? (
               <button className="btn btn-primary no-animation">
