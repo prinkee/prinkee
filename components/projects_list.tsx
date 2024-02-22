@@ -98,6 +98,16 @@ export default function ProjectsList() {
             disclaimerText=""
             blank={true}
           />
+          <ProjectCard
+            img="sunessentials.png"
+            imgAlt="SunEssentials"
+            title="SunEssentials"
+            link="https://youtu.be/7rhPVSMQPw4"
+            linkText="View Demo Video"
+            description="A custom essentials plugin for a private SMP"
+            disclaimerText=""
+            blank={true}
+          />
         </div>
       </div>
     </>
