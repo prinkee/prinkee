@@ -108,6 +108,26 @@ export default function ProjectsList() {
             disclaimerText=""
             blank={true}
           />
+          <ProjectCard
+            img="manhunt.png"
+            imgAlt="Manhunt"
+            title="Manhunt"
+            link="https://github.com/prinketaru/manhunt"
+            linkText="View Github Repo"
+            description="A manhunt plugin created for a private SMP"
+            disclaimerText=""
+            blank={true}
+          />
+          <ProjectCard
+            img="stashinv.png"
+            imgAlt="Stash Inventory"
+            title="Stash Inventory"
+            link="https://youtu.be/yDfVlnGGCco"
+            linkText="View Demo Video"
+            description="A plugin that lets you stash your inventory away."
+            disclaimerText=""
+            blank={true}
+          />
         </div>
       </div>
     </>
