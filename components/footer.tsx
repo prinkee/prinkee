@@ -12,7 +12,7 @@ export default function Footer() {
             className="link-primary"
             target="_blank"
           >
-            x
+            x (formerly twitter)
           </Link>
           ,{" "}
           <Link
