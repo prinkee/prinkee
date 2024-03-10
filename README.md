@@ -18,4 +18,4 @@ I'm a Full Stack Developer and Software Engineer. I have a passion for learning 
 - UI/UX design skills: **Framer Motion, DaisyUI, TailwindCSS, ChakraUI, Flowbite**
 
 ## 📊 My GitHub Stats
-![Prinke's GitHub stats](https://github-readme-stats.vercel.app/api?username=prinkee&show_icons=true&theme=radical)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=prinketaru)](https://github.com/anuraghazra/github-readme-stats)
